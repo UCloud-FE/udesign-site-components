@@ -1,12 +1,12 @@
-import React from "react";
-import "./Layout.scss";
+import React from 'react';
+import './Layout.scss';
 
 export interface LayoutProps {
-  name: string;
+	name: string;
 }
 
 const Layout = (props: LayoutProps) => {
-  return <p>{props.name}</p>;
+	return <p>{props.name}</p>;
 };
 
 export default Layout;
