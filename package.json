@@ -14,12 +14,15 @@
     "build-storybook": "build-storybook",
     "prepare": "husky install",
     "eslint": "eslint src --fix --ext js,jsx,ts,tsx",
-    "format": "prettier --write **/*.{js,jsx,ts,tsx} && npm run eslint"
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,scss} && npm run eslint"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
       "npx eslint --fix"
+    ],
+    "**/*.{scss}": [
+      "npx prettier --write"
     ]
   },
   "repository": {
