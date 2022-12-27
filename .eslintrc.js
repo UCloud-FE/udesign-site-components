@@ -11,9 +11,5 @@ module.exports = {
 		project: './tsconfig.json',
 	},
 	plugins: ['react'],
-	rules: {
-		indent: ['warn', 'tab'],
-		quotes: ['error', 'single'],
-		semi: ['error', 'always'],
-	},
+	rules: {},
 };
